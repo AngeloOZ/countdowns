@@ -121,7 +121,6 @@ input[type='radio']:checked + label::before{
     width: 70%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
 }
 .form-group label{
     font-size: 22px;
@@ -147,7 +146,7 @@ input[type='radio']:checked + label::before{
 }
 .nombre-countdown h2{
     color: #fff;
-    font-size: 75px;
+    font-size: 70px;
     text-shadow: 0 0 7px #000;
 }
 .ctn-cajas{
