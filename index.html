@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="ctn-main">
+            <h1>Tu Cuenta Regresiva<br>de <span class="typed"></span></h1>
+            <form action="" id="formEvents" class="formEvents" method="POST">
+                <div class="options">
+                    <input type="radio" name="tipo" id="tipoDefault">
+                    <label for="tipoDefault" class="tipoDefault">Listado de Eventos</label>
+                    <input type="radio" name="tipo" id="tipoCustom">
+                    <label for="tipoCustom" class="tipoCustom">Añadir Evento</label>
+                </div>
+                <div class="default">
+                    <select name="eventosDefault" id="eventosDefault">
+                    </select>
+                </div>
+                <div class="custom">
+                    <div class="form-group">
+                        <label for="nombreEvent">Nombre del CountDown</label>
+                        <input type="text" name="" id="nombreEvent">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombreEvent">Mensaje Final</label>
+                        <input type="text" name="" id="mensajeEnd">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input type="datetime-local" id="dateSelect">
+                    </div>
+                </div>
+                <input type="submit" value="Iniciar Cuenta atrás">
+            </form>
+        </div>
+        <div class="countdown">
+            <button id="btn-new-event" class="btn-new-event">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Cambiar Fecha<br/> de Evento
+            </button>
+            <div class="nombre-countdown">
+                <h2>Esta es tu cuenta regresiva</h2>
+            </div>
+            <div class="ctn-cajas">
+                <div class="cajas">
+                    <span class="text-date2">Días</span>
+                    <span class="text-date"></span>
+                </div>
+                <div class="cajas">
+                    <span class="text-date2">Horas</span>
+                    <span class="text-date"></span>
+                </div>
+                <div class="cajas">
+                    <span class="text-date2">Minutos</span>
+                    <span class="text-date"></span>
+                </div>
+                <div class="cajas">
+                    <span class="text-date2">Segundos</span>
+                    <span class="text-date"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/countdown.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
